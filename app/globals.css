@@ -1,15 +1,10 @@
-@import "tailwindcss";
+/*@tailwind base;
+@tailwind components;
+@tailwind utilities;*/
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -20,7 +15,127 @@
 }
 
 body {
-  background: var(--background);
   color: var(--foreground);
+  background: /*var(--background)*/#e7e7e7;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/*#logo {
+  display: none;
+  position: fixed;
+  top: 1%;
+  left: 1%;
+  width: 8vmin;
+  height: 8vmin;
+  transition-delay: 2s;
+  animation: popInBounce 0.4s ease-out 2s forwards;
+}*/
+#header {
+  display: flex; /*Enable flexbox*/
+  align-items: center; /*Center vertically (up/down)*/
+  justify-content: center; /*Center horizontally (left/right)*/
+  background-color: white; /* Grey background */
+  text-align: center;
+  color: black;
+  align-items: center; /* Centered text */
+  font-size: 11vmin; /* Big font size */
+  font-weight: bold;
+  position: fixed; /* Fixed position - sit on top of the page */
+  top: 0;
+  left: 0;
+  width: 100vw; /* Full width */
+  height: 100vh;
+  z-index: -1;
+  transition: 0.4s; /* Add a transition effect (when scrolling - and font size is decreased) */
+}
+
+#statement {
+  display: flex; /*Enable flexbox*/
+  align-items: center; /*Center vertically (up/down)*/
+  justify-content: center; /*Center horizontally (left/right)*/
+  text-align: center;
+  color: black;
+  align-items: center; /* Centered text */
+  font-size: 5vmin; /* Big font size */
+  font-weight: bold;
+  position: fixed; /* Fixed position - sit on top of the page */
+  top: 20%;
+  left: 10%;
+  width: 80vw;
+  height: 80vh;
+  opacity: 1;
+  transition: 0.4s; /* Add a transition effect (when scrolling - and font size is decreased) */
+}
+
+.newPage {
+  padding-top: 150vh;
+  color: red;
+}
+
+#fadingText {
+  display: flex; /*Enable flexbox*/
+  align-items: center; /*Center vertically (up/down)*/
+  justify-content: center; /*Center horizontally (left/right)*/
+  text-align: center;
+  color: black;
+  font-size: 3vmin; /* Big font size */
+  font-weight: bold;
+  position: fixed; /* Fixed position - sit on top of the page */
+  top: 90%;
+  left: 10%;
+  width: 80vw;
+  height: 10vh;
+  animation: fade 2s linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.image {
+  display: none;
+  position: fixed;
+  top: 1%;
+  width: 8vmin;
+  height: 8vmin;
+  transition: 0.4s;
+  animation: popInBounce 0.4s ease-out;/* 2s forwards;*/
+}
+
+#login {
+  border: none;
+  cursor: pointer;
+  appearance: none;
+  background-color: transparent;
+  position: fixed;
+  top: 1%;
+  right: 1%;
+  width: 8vmin;
+  height: 8vmin;
+  transition: 0.4s;
+  animation: popInBounce 0.4s ease-out;/* 2s forwards;*/
+}
+
+#login:hover {
+  background-color: black;
+}
+
+@keyframes fade {
+  0% { opacity: 1 }
+  100% { opacity: 0 }
+}
+
+@keyframes popInBounce {
+  0% {
+      transform: scale(0.5);
+      opacity: 0;
+  }
+  60% {
+      transform: scale(1.2);
+      opacity: 1;
+  }
+  80% {
+      transform: scale(0.95);
+  }
+  100% {
+      transform: scale(1);
+  }
 }
