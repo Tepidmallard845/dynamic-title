@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import { useEffect } from 'react';
-//import "../app/globals.css";
+import "../app/globals.css";
 //import "../images/profile.png";
 
 function Header({ title, subtitle }) {
