@@ -108,8 +108,8 @@ body {
   position: fixed;
   top: 1%;
   right: 1%;
-  width: 8vmin;
-  height: 8vmin;
+  width: 8vh;
+  height: 8vh;
   transition: 0.4s;
   animation: popInBounce 0.4s ease-out;/* 2s forwards;*/
 }
