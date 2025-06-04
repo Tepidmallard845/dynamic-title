@@ -13,9 +13,9 @@ function Header({ title, subtitle }) {
         var statement = document.getElementById("statement").style
         var images = document.getElementsByClassName("image")
 
-        Array.from(images).forEach(element => {
+        /*Array.from(images).forEach(element => {
             console.log(element);
-        });
+        });*/
 
         //var logo = document.getElementById("logo").style
         //var loginButton = document.getElementById("login").style
