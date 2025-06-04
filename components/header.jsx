@@ -57,8 +57,8 @@ function Header({ title, subtitle }) {
     }, [])
     return(/*<img src={"../images/profile.png"}></img>*/
         <>
-        <Image src="/app/images/favicon.ico" alt="home" style={{ left: "1%" }} className="image" width={200} height={200}/>
-        <button type="button" id="login"><Image src="/app/images/icon.ico" className="image" alt="logo" width={200} height={200}/></button>
+        <Image src="/images/favicon.ico" alt="home" style={{ left: "1%" }} className="image" width={200} height={200}/>
+        <button type="button" id="login"><Image src="/images/icon.ico" className="image" alt="logo" width={200} height={200}/></button>
         <div id='header'>{title}</div>
         <div id='statement'>{subtitle}</div>
         </>
