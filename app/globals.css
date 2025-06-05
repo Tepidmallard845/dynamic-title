@@ -114,9 +114,9 @@ body {
   animation: popInBounce 0.4s ease-out;/* 2s forwards;*/
 }
 
-#login:hover {
+/*#login:hover {
   background-color: black;
-}
+}*/
 
 @keyframes fade {
   0% { opacity: 1 }
