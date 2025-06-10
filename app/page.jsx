@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function Home() {
     return(
     <>
-    <Header name="viewport" title="COMPANY NAME TEST" subtitle="Your. Mission. Statement."/>
+    <Header name="viewport" title="COMPANY NAME" subtitle="Your. Mission. Statement."/>
     <div id='fadingText'>Scroll</div>
     <div className='newPage'></div>
     </>
